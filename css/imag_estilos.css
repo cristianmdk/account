@@ -1,0 +1,38 @@
+body {
+
+}
+
+.contenedor-galary {
+	display: flex¡;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.galery__img {
+	position:relative;
+	width: 220px;
+	height: 120px;
+	margin-bottom: 30px;
+	object-fit: cover;
+	filter: brightness(60%);
+	animation: escalar 0.5s;
+	border-radius: 10px;
+}
+
+@keyframes escalar{
+	to {
+		transform: scale(1);
+	}
+	from{
+		transform: scale(0.5);
+	}
+}
+
+.galery__img:hover{
+	filter: brightness(100%);
+}
+
+
